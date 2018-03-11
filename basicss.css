@@ -18,10 +18,30 @@ body {
 
   /* Improve consistency of default fonts across browsers */
   font: 16px/1.5 -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-    Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+    'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
     'Segoe UI Symbol';
 
   /* Smoother font rendering */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+p,
+figure,
+blockquote {
+  /* Remove margin top */
+  margin: 0 0 1rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  /* Remove margin top */
+  margin: 0 0 0.5rem;
+
+  /* Nicer spacing for headings */
+  line-height: 1.25;
 }
