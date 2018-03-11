@@ -45,3 +45,16 @@ h6 {
   /* Nicer spacing for headings */
   line-height: 1.25;
 }
+
+p:last-child,
+h1:last-child,
+h2:last-child,
+h3:last-child,
+h4:last-child,
+h5:last-child,
+h6:last-child,
+figure:last-child,
+blockquote:last-child {
+  /* Remove margin-bottom for last instance of elements */
+  margin-bottom: 0;
+}
