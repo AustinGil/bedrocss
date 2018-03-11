@@ -1,15 +1,27 @@
 /*! basicss | MIT License | https://github.com/stegosource/basicss */
 
-/**
- * Use a better box model (opinionated).
- */
-
 html {
+  /* Use better box model */
   box-sizing: border-box;
 }
 
 *,
 *:before,
 *:after {
+  /* Use better box model */
   box-sizing: inherit;
+}
+
+body {
+  /* Remove default body margin */
+  margin: 0;
+
+  /* Improve consistency of default fonts across browsers */
+  font: 16px/1.5 -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+    'Segoe UI Symbol';
+
+  /* Smoother font rendering */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
