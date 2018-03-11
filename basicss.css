@@ -95,6 +95,64 @@ button {
 
 /**
  *
+ * FORMS
+ *
+ */
+label {
+  /* So users know they can click on labels to highlight inputs */
+  cursor: pointer;
+}
+
+input,
+select,
+textarea {
+  /* Full width inputs */
+  width: 100%;
+  max-width: 100%;
+
+  /* Border can match current color */
+  border: 1px solid currentColor;
+
+  /* Inherit the font and colors */
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+}
+
+select {
+  /* Hides the default dropdown arrow */
+  appearance: none;
+
+  /* So text doesn't overlap image */
+  padding-right: 2rem;
+
+  /* Add a custom image for the dropdown */
+  background-image: url('data:image/svg+xmlutf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.96 16.442"><path d="M3.965 0l5.48 12.307L14.962 0h4l-7.618 16.442H7.62L0 0h3.965z" fill="currentColor"/></svg>');
+  background-size: 0.7em;
+  background-repeat: no-repeat;
+  background-position: right 0.5em center;
+}
+
+select::-ms-expand {
+  /* Hides the default dropdown arrow in IE11 */
+  display: none;
+}
+
+textarea {
+  /* Only allow vertical resizing of text area by default */
+  resize: vertical;
+}
+
+input[type='checkbox'],
+input[type='radio'],
+input[type='submit'],
+input[type='button'] {
+  /* Reset width for these input types */
+  width: auto;
+}
+
+/**
+ *
  * IMAGES
  *
  */
@@ -112,6 +170,7 @@ figcaption {
 }
 
 svg {
+  /* SVG's can inherit color from parents */
   fill: currentColor;
   stroke: currentColor;
   stroke-width: 0;
