@@ -1,0 +1,15 @@
+/*! basicss | MIT License | https://github.com/stegosource/basicss */
+
+/**
+ * Use a better box model (opinionated).
+ */
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
