@@ -40,6 +40,9 @@ h6 {
 }
 
 p,
+ol,
+ul,
+dl,
 figure,
 blockquote {
   /* Remove margin top */
@@ -53,6 +56,9 @@ h4:last-child,
 h5:last-child,
 h6:last-child,
 p:last-child,
+ol:last-child,
+ul:last-child,
+dl:last-child,
 figure:last-child,
 blockquote:last-child {
   /* Remove margin-bottom for last instance of elements */
@@ -70,4 +76,13 @@ a {
   -webkit-backface-visibility: hidden;
   -webkit-perspective: 1000;
   backface-visibility: hidden;
+}
+
+img,
+figure,
+svg {
+  /* Images should not stretch beyond their containers */
+  vertical-align: middle;
+  max-width: 100%;
+  height: auto;
 }
