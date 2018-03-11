@@ -70,11 +70,6 @@ blockquote:last-child {
   margin-bottom: 0;
 }
 
-/**
- *
- * LINKS AND BUTTONS
- *
- */
 a {
   /* Remove link underlines */
   text-decoration: none;
@@ -88,20 +83,22 @@ a {
   backface-visibility: hidden;
 }
 
-button {
-  border: 1px solid currentColor;
-  font: inherit;
-  color: inherit;
-}
-
 /**
  *
- * FORMS
+ * BUTTONS & FORMS
  *
  */
-label {
-  /* So users know they can click on labels to highlight inputs */
-  cursor: pointer;
+button,
+input,
+select,
+textarea {
+  /* Border can match current color */
+  /* border: 1px solid currentColor; */
+
+  /* Inherit the font and colors */
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
 }
 
 button,
@@ -118,19 +115,20 @@ textarea {
 
   /* Reset margin */
   margin: 0;
+}
 
-  /* Border can match current color */
-  border: 1px solid currentColor;
-
-  /* Inherit the font and colors */
-  font-family: inherit;
-  font-size: inherit;
-  line-height: inherit;
-  color: inherit;
+input[type='checkbox'],
+input[type='radio'],
+input[type='button'],
+input[type='reset'],
+input[type='submit'] {
+  /* Reset width for these input types */
+  width: auto;
 }
 
 select {
   /* Hides the default dropdown arrow */
+  -moz-appearance: none;
   appearance: none;
 
   /* So text doesn't overlap image */
@@ -153,12 +151,9 @@ textarea {
   resize: vertical;
 }
 
-input[type='checkbox'],
-input[type='radio'],
-input[type='submit'],
-input[type='button'] {
-  /* Reset width for these input types */
-  width: auto;
+label {
+  /* So users know they can click on labels to highlight inputs */
+  cursor: pointer;
 }
 
 /**
