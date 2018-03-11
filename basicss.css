@@ -26,13 +26,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-p,
-figure,
-blockquote {
-  /* Remove margin top */
-  margin: 0 0 1rem;
-}
-
 h1,
 h2,
 h3,
@@ -46,15 +39,35 @@ h6 {
   line-height: 1.25;
 }
 
-p:last-child,
+p,
+figure,
+blockquote {
+  /* Remove margin top */
+  margin: 0 0 1rem;
+}
+
 h1:last-child,
 h2:last-child,
 h3:last-child,
 h4:last-child,
 h5:last-child,
 h6:last-child,
+p:last-child,
 figure:last-child,
 blockquote:last-child {
   /* Remove margin-bottom for last instance of elements */
   margin-bottom: 0;
+}
+
+a {
+  /* Remove link underlines */
+  text-decoration: none;
+
+  /* Add hardware acceleration for smoother transitions */
+  transform: translate3d(0, 0, 0);
+
+  /* Helps prevent flickers on opacity transitions */
+  -webkit-backface-visibility: hidden;
+  -webkit-perspective: 1000;
+  backface-visibility: hidden;
 }
