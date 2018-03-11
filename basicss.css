@@ -26,6 +26,11 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+/**
+ *
+ * TEXT ELEMENTS
+ *
+ */
 h1,
 h2,
 h3,
@@ -78,6 +83,11 @@ a {
   backface-visibility: hidden;
 }
 
+/**
+ *
+ * IMAGES
+ *
+ */
 img,
 figure,
 svg {
@@ -85,4 +95,14 @@ svg {
   vertical-align: middle;
   max-width: 100%;
   height: auto;
+}
+
+figcaption {
+  margin-top: 0.5rem;
+}
+
+svg {
+  fill: currentColor;
+  stroke: currentColor;
+  stroke-width: 0;
 }
