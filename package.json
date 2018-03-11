@@ -1,0 +1,22 @@
+{
+  "name": "basicss",
+  "version": "1.0.0",
+  "description": "An opinionated starting point for styling base HTML elements.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Stegosource/basicss.git"
+  },
+  "keywords": [
+    "css"
+  ],
+  "author": "Austin Gil <austin@stegosource.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Stegosource/basicss/issues"
+  },
+  "homepage": "https://github.com/Stegosource/basicss#readme"
+}

@@ -1,2 +1,3 @@
 # basicss
-An opinionated starting point for styling base HTML elements
+
+An opinionated starting point for styling base HTML elements.
