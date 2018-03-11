@@ -70,6 +70,11 @@ blockquote:last-child {
   margin-bottom: 0;
 }
 
+/**
+ *
+ * LINKS AND BUTTONS
+ *
+ */
 a {
   /* Remove link underlines */
   text-decoration: none;
@@ -81,6 +86,15 @@ a {
   -webkit-backface-visibility: hidden;
   -webkit-perspective: 1000;
   backface-visibility: hidden;
+}
+
+button {
+  border: 1px solid currentColor;
+  font: inherit;
+}
+
+button:disabled {
+  /* background-color: transparent; */
 }
 
 /**
@@ -105,4 +119,22 @@ svg {
   fill: currentColor;
   stroke: currentColor;
   stroke-width: 0;
+}
+
+/**
+ *
+ * MISC
+ *
+ */
+table {
+  width: 100%;
+}
+
+iframe {
+  border: 0;
+}
+
+::-moz-focus-inner {
+  border: 0;
+  padding: 0;
 }
