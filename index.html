@@ -257,110 +257,118 @@
 
 	<section>
 		<h2 style="text-align: center;">
-			<strong>Buttons & Forms: &lt;button&gt;, &lt;form&gt;, &lt;label&gt;, &lt;input&gt;, &lt;select&gt;, &lt;textarea&gt;, &lt;textarea&gt;</strong>
+			<strong>Buttons & Forms: &lt;button&gt;, &lt;form&gt;, &lt;label&gt;, &lt;input&gt;, &lt;select&gt;, &lt;textarea&gt;, &lt;fieldset&gt;, &lt;legend&gt;</strong>
 		</h2>
 
-		<p>
-			<button>Button</button>
-			<button disabled>Disabled Button</button>
-		</p>
-
-		<p>
-			<strong>NOTE:</strong> These form fields are placed WITHIN wrapping labels. Some implementations keep the labels and inputs separate. This may affect your styles.</p>
+		<span>Buttons</span>
+		<button>Button</button>
+		<button disabled>Disabled Button</button>
 
 		<form>
-			<label>Input (type="button")
-				<input type="button" value="Button">
+			<label>Label</label>
+			<br>
+			<span>Input (type="button")</span>
+			<br>
+			<input type="button" value="Button">
+			<br>
+			<span>Input (type="checkbox")</span>
+			<br>
+			<label>
+				<input type="checkbox" name="checkbox"> Checkbox 1
 			</label>
 			<label>
-				<input type="checkbox" name="checkbox"> Input (type="checkbox") 1
+				<input type="checkbox" name="checkbox"> Checkbox 2
 			</label>
 			<label>
-				<input type="checkbox" name="checkbox"> Input (type="checkbox") 2
-			</label>
-			<label>
-				<input type="checkbox" name="checkbox"> Input (type="checkbox") 3
-			</label>
-			<label>Input (type="color")
-				<input type="color">
-			</label>
-			<label>Input (type="date")
-				<input type="date">
-			</label>
-			<label>Input (type="datetime-local")
-				<input type="datetime-local">
-			</label>
-			<label>Input (type="email")
-				<input type="email">
-			</label>
-			<label>Input (type="file")
-				<input type="file">
-			</label>
-			<label>Input (type="hidden")
-				<input type="hidden">
+				<input type="checkbox" name="checkbox"> Checkbox 3
 			</label>
 			<br>
-			<!-- <label>Input (type="image")
-				<input type="image">
-			</label> -->
-			<label>Input (type="month")
-				<input type="month">
-			</label>
-			<label>Input (type="number")
-				<input type="number">
-			</label>
-			<label>Input (type="password")
-				<input type="password">
+			<span>Input (type="color")</span>
+			<br>
+			<input type="color">
+			<br>
+			<span>Input (type="date")</span>
+			<br>
+			<input type="date">
+			<br>
+			<span>Input (type="email")</span>
+			<br>
+			<input type="email">
+			<br>
+			<span>Input (type="file")</span>
+			<br>
+			<input type="file">
+			<br>
+			<span>Input (type="hidden")</span>
+			<input type="hidden">
+			<br>
+			<span>Input (type="number")</span>
+			<br>
+			<input type="number">
+			<br>
+			<span>Input (type="password")</span>
+			<br>
+			<input type="password">
+			<br>
+			<span>Input (type="radio")</span>
+			<br>
+			<label>
+				<input type="radio" name="radio"> Radio 1
 			</label>
 			<label>
-				<input type="radio" name="radio"> Input (type="radio") 1
+				<input type="radio" name="radio"> Radio 2
 			</label>
 			<label>
-				<input type="radio" name="radio"> Input (type="radio") 2
+				<input type="radio" name="radio"> Radio 3
 			</label>
-			<label>
-				<input type="radio" name="radio"> Input (type="radio") 3
-			</label>
-			<label>Input (type="range")
-				<input type="range">
-			</label>
-			<label>Input (type="reset")
-				<input type="reset">
-			</label>
-			<label>Input (type="search")
-				<input type="search">
-			</label>
-			<label>Input (type="submit")
-				<input type="submit">
-			</label>
-			<label>Input (type="tel")
-				<input type="tel">
-			</label>
-			<label>Input (type="text")
-				<input type="text">
-			</label>
-			<label>Input (type="time")
-				<input type="time">
-			</label>
-			<label>Input (type="url")
-				<input type="url">
-			</label>
-			<label>Input (type="week")
-				<input type="week">
-			</label>
-			<label>Disabled Input
-				<input type="text" disabled>
-			</label>
-			<label>Select
-				<select>
-					<option value="1">Option 1</option>
-					<option value="2" disabled>Option 2 (disabled)</option>
-					<option value="3">Option 3</option>
-				</select>
-			</label>
-			<label>Textarea
-				<textarea></textarea>
-			</label>
+			<br>
+			<span>Input (type="range")</span>
+			<br>
+			<input type="range">
+			<br>
+			<span>Input (type="reset")</span>
+			<br>
+			<input type="reset">
+			<br>
+			<span>Input (type="search")</span>
+			<br>
+			<input type="search">
+			<br>
+			<span>Input (type="submit")</span>
+			<br>
+			<input type="submit">
+			<br>
+			<span>Input (type="tel")</span>
+			<br>
+			<input type="tel">
+			<br>
+			<span>Input (type="text")</span>
+			<br>
+			<input type="text">
+			<br>
+			<span>Input (type="time")</span>
+			<br>
+			<input type="time">
+			<br>
+			<span>Input (type="url")</span>
+			<br>
+			<input type="url">
+			<br>
+			<span>Disabled Input</span>
+			<br>
+			<input type="text" disabled>
+			<br>
+			<span>Select</span>
+			<select>
+				<option value="1">Option 1</option>
+				<option value="2" disabled>Option 2 (disabled)</option>
+				<option value="3">Option 3</option>
+			</select>
+			<br>
+			<span>Textarea</span>
+			<br>
+			<textarea></textarea>
+			<br>
 			<fieldset>
 				<legend>Fieldset with Legend:</legend>
 				<label>Name:

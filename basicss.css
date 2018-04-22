@@ -135,6 +135,7 @@ fieldset {
 
 input[type="button"],
 input[type="checkbox"],
+input[type="file"],
 input[type="radio"],
 input[type="reset"],
 input[type="submit"] {
