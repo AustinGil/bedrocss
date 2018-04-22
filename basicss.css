@@ -17,9 +17,9 @@ body {
   margin: 0;
 
   /* Improve consistency of default fonts across browsers */
-  font: 16px/1.5 -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-    'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
-    'Segoe UI Symbol';
+  font: 16px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol";
 
   /* Smoother font rendering */
   -webkit-font-smoothing: antialiased;
@@ -49,7 +49,8 @@ ol,
 ul,
 dl,
 figure,
-blockquote {
+blockquote,
+table {
   /* Remove margin top */
   margin: 0 0 1rem;
 }
@@ -72,7 +73,7 @@ blockquote:last-child {
 
 a {
   /* Remove link underlines */
-  text-decoration: none;
+  /* text-decoration: none; */
 
   /* Add hardware acceleration for smoother transitions */
   transform: translate3d(0, 0, 0);
@@ -99,61 +100,86 @@ textarea {
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
+
+  /* background-color: transparent;
+
+  vertical-align: middle; */
+}
+
+label,
+button,
+input[type="button"],
+input[type="color"],
+input[type="reset"],
+input[type="submit"],
+select {
+  cursor: pointer;
 }
 
 button,
 input {
-  overflow: visible;
+  /* overflow: visible; */
 }
 
 input,
 select,
-textarea {
+textarea,
+fieldset {
   /* Full width inputs */
   width: 100%;
   max-width: 100%;
 
   /* Reset margin */
-  margin: 0;
+  margin: 0 0 0.5em;
 }
 
-input[type='checkbox'],
-input[type='radio'],
-input[type='button'],
-input[type='reset'],
-input[type='submit'] {
+input[type="button"],
+input[type="checkbox"],
+input[type="radio"],
+input[type="reset"],
+input[type="submit"] {
   /* Reset width for these input types */
-  width: auto;
+  width: unset;
+}
+
+input[type="color"] {
+  width: 4em;
+  padding: 0;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  margin: initial;
+}
+
+input[type="range"] {
+  /* border: none; */
 }
 
 select {
   /* Hides the default dropdown arrow */
-  -moz-appearance: none;
-  appearance: none;
+  /* -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none; */
 
   /* So text doesn't overlap image */
-  padding-right: 2rem;
+  /* padding-right: 2rem; */
 
   /* Add a custom image for the dropdown */
-  background-image: url('data:image/svg+xmlutf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.96 16.442"><path d="M3.965 0l5.48 12.307L14.962 0h4l-7.618 16.442H7.62L0 0h3.965z" fill="currentColor"/></svg>');
+  /* background-image: url('data:image/svg+xmlutf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.96 16.442"><path d="M3.965 0l5.48 12.307L14.962 0h4l-7.618 16.442H7.62L0 0h3.965z" fill="currentColor"/></svg>');
   background-size: 0.7em;
   background-repeat: no-repeat;
-  background-position: right 0.5em center;
+  background-position: right 0.5em center; */
 }
 
 select::-ms-expand {
   /* Hides the default dropdown arrow in IE11 */
-  display: none;
+  /* display: none; */
 }
 
 textarea {
   /* Only allow vertical resizing of text area by default */
-  resize: vertical;
-}
-
-label {
-  /* So users know they can click on labels to highlight inputs */
-  cursor: pointer;
+  /* resize: vertical; */
 }
 
 /**
@@ -188,6 +214,15 @@ svg {
  */
 table {
   width: 100%;
+}
+
+th,
+td {
+  border-bottom: 1px solid;
+}
+
+small {
+  font-size: 80%;
 }
 
 iframe {
