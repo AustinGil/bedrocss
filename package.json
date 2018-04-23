@@ -6,7 +6,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "npx parcel-bundler index.html -p 8080",
-    "build": "npx parcel-bundler build"
+    "build": "rm -rf dist && npx parcel-bundler build"
   },
   "repository": {
     "type": "git",
@@ -18,5 +18,10 @@
   "bugs": {
     "url": "https://github.com/Stegosource/basicss/issues"
   },
-  "homepage": "https://github.com/Stegosource/basicss#readme"
+  "homepage": "https://github.com/Stegosource/basicss#readme",
+  "devDependencies": {
+    "autoprefixer": "^8.3.0",
+    "postcss": "^6.0.21",
+    "postcss-modules": "^1.1.0"
+  }
 }
