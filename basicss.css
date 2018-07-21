@@ -208,6 +208,12 @@ svg {
   stroke-width: 0;
 }
 
+a svg,
+button svg {
+  /* Disable pointer events on SVG's inside clickable elements */
+  pointer-events: none;
+}
+
 /**
  *
  * MISC
