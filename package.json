@@ -21,7 +21,7 @@
   "homepage": "https://github.com/Stegosource/basicss#readme",
   "devDependencies": {
     "autoprefixer": "^9.5.1",
-    "postcss": "^6.0.21",
+    "postcss": "^7.0.14",
     "postcss-modules": "^1.1.0"
   }
 }
