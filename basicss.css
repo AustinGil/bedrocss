@@ -13,6 +13,8 @@ html {
 }
 
 body {
+  min-height: 100vh;
+  
   /* Remove default body margin */
   margin: 0;
 
@@ -20,6 +22,8 @@ body {
   font: 16px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
     "Segoe UI Symbol";
+  
+  text-rendering: optimizeSpeed;
 
   /* Smoother font rendering */
   -webkit-font-smoothing: antialiased;
@@ -37,10 +41,7 @@ h3,
 h4,
 h5,
 h6 {
-  /* Remove margin top */
   margin: 0 0 0.5rem;
-
-  /* Nicer spacing for headings */
   line-height: 1.25;
 }
 
@@ -49,9 +50,7 @@ ol,
 ul,
 dl,
 figure,
-blockquote,
-table {
-  /* Remove margin top */
+blockquote {
   margin: 0 0 1rem;
 }
 
@@ -67,21 +66,7 @@ ul:last-child,
 dl:last-child,
 figure:last-child,
 blockquote:last-child {
-  /* Remove margin-bottom for last instance of elements */
   margin-bottom: 0;
-}
-
-a {
-  /* Remove link underlines */
-  /* text-decoration: none; */
-
-  /* Add hardware acceleration for smoother transitions */
-  transform: translate3d(0, 0, 0);
-
-  /* Helps prevent flickers on opacity transitions */
-  -webkit-backface-visibility: hidden;
-  -webkit-perspective: 1000;
-  backface-visibility: hidden;
 }
 
 /**
@@ -93,44 +78,17 @@ button,
 input,
 select,
 textarea {
-  /* Border can match current color */
-  /* border: 1px solid currentColor; */
-
-  /* Inherit the font and colors */
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
-
-  /* background-color: transparent;
-
-  vertical-align: middle; */
-}
-
-label,
-button,
-input[type="button"],
-input[type="color"],
-input[type="reset"],
-input[type="submit"],
-select {
-  cursor: pointer;
-}
-
-button,
-input {
-  /* overflow: visible; */
 }
 
 input,
 select,
 textarea,
 fieldset {
-  /* Full width inputs */
   width: 100%;
   max-width: 100%;
-
-  /* Reset margin */
-  margin: 0 0 0.5em;
 }
 
 input[type="button"],
@@ -139,48 +97,12 @@ input[type="file"],
 input[type="radio"],
 input[type="reset"],
 input[type="submit"] {
-  /* Reset width for these input types */
   width: unset;
-}
-
-input[type="color"] {
-  width: 4em;
-  padding: 0;
 }
 
 input[type="checkbox"],
 input[type="radio"] {
   margin: initial;
-}
-
-input[type="range"] {
-  /* border: none; */
-}
-
-select {
-  /* Hides the default dropdown arrow */
-  /* -moz-appearance: none;
-  -webkit-appearance: none;
-  appearance: none; */
-
-  /* So text doesn't overlap image */
-  /* padding-right: 2rem; */
-
-  /* Add a custom image for the dropdown */
-  /* background-image: url('data:image/svg+xmlutf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.96 16.442"><path d="M3.965 0l5.48 12.307L14.962 0h4l-7.618 16.442H7.62L0 0h3.965z" fill="currentColor"/></svg>');
-  background-size: 0.7em;
-  background-repeat: no-repeat;
-  background-position: right 0.5em center; */
-}
-
-select::-ms-expand {
-  /* Hides the default dropdown arrow in IE11 */
-  /* display: none; */
-}
-
-textarea {
-  /* Only allow vertical resizing of text area by default */
-  /* resize: vertical; */
 }
 
 /**
@@ -197,12 +119,7 @@ svg {
   height: auto;
 }
 
-figcaption {
-  margin-top: 0.5rem;
-}
-
 svg {
-  /* SVG's can inherit color from parents */
   fill: currentColor;
   stroke: currentColor;
   stroke-width: 0;
@@ -232,15 +149,6 @@ small {
   font-size: 80%;
 }
 
-iframe {
-  border: 0;
-}
-
 [hidden] {
   display: none !important;
-}
-
-::-moz-focus-inner {
-  border: 0;
-  padding: 0;
 }
