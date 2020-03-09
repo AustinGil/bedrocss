@@ -1,40 +1,25 @@
 /*! basicss | MIT License | https://github.com/stegosource/basicss */
 
 html {
-  /* Use better box model */
   box-sizing: border-box;
 }
 
 *,
 *:before,
 *:after {
-  /* Use better box model */
   box-sizing: inherit;
 }
 
 body {
   min-height: 100vh;
-  
-  /* Remove default body margin */
   margin: 0;
-
-  /* Improve consistency of default fonts across browsers */
   font: 16px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
     "Segoe UI Symbol";
-  
-  text-rendering: optimizeSpeed;
-
-  /* Smoother font rendering */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-/**
- *
- * TEXT ELEMENTS
- *
- */
 h1,
 h2,
 h3,
@@ -69,18 +54,23 @@ blockquote:last-child {
   margin-bottom: 0;
 }
 
-/**
- *
- * BUTTONS & FORMS
- *
- */
+ul[class],
+ol[class] {
+  padding-left: 0;
+  list-style-type: none;
+}
+
+fieldset {
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+
 button,
 input,
 select,
 textarea {
-  font-family: inherit;
-  font-size: inherit;
-  line-height: inherit;
+  font: inherit;
 }
 
 input,
@@ -88,7 +78,6 @@ select,
 textarea,
 fieldset {
   width: 100%;
-  max-width: 100%;
 }
 
 input[type="button"],
@@ -105,18 +94,12 @@ input[type="radio"] {
   margin: initial;
 }
 
-/**
- *
- * IMAGES
- *
- */
 img,
 figure,
 svg {
-  /* Images should not stretch beyond their containers */
-  vertical-align: middle;
   max-width: 100%;
   height: auto;
+  vertical-align: middle;
 }
 
 svg {
@@ -127,22 +110,11 @@ svg {
 
 a svg,
 button svg {
-  /* Disable pointer events on SVG's inside clickable elements */
   pointer-events: none;
 }
 
-/**
- *
- * MISC
- *
- */
 table {
   width: 100%;
-}
-
-th,
-td {
-  border-bottom: 1px solid;
 }
 
 small {
