@@ -1,4 +1,4 @@
-# BedroCSS
+# Bedrocss
 
 A solid foundation of HTML styles.
 
