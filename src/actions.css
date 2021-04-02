@@ -1,0 +1,39 @@
+button {
+  border-style: solid;
+  color: inherit;
+}
+fieldset {
+  border: 0;
+}
+/* :where removes specificity from :not */
+:where(input:not(
+  [type="checkbox"],
+  [type="radio"],
+  [type="file"],
+  [type="image"],
+  [type="color"],
+  [type="button"],
+  [type="reset"],
+  [type="submit"]
+)), select, textarea {
+  inline-size: 100%;
+  border-style: solid;
+}
+select {
+  appearance: none;
+  padding-right: 2em;
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="8"><path fill="black" d="M0 0 H16 L8 8 Z"/></svg>') right .6em center / .8em no-repeat, #fff;
+}
+textarea {
+  resize: vertical;
+}
+meter, progress {
+  inline-size: 100%;
+}
+:disabled {
+  border-style: dotted;
+  cursor: not-allowed;
+}
+[readonly] {
+  border-style: dashed;
+}

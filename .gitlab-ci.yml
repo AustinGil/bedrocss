@@ -1,8 +1,0 @@
-stages:
-  - deploy
-
-Publish to netlify:
-  stage: deploy
-  script:
-    # Triggers a build trigger from netlify
-    - curl -X POST -d '{}' https://api.netlify.com/build_hooks/5add25b50733d538003779f1

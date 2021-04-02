@@ -1,27 +1,28 @@
 {
-  "name": "basicss",
-  "version": "1.0.0",
-  "description":
-    "An opinionated starting point for styling base HTML elements.",
-  "main": "index.js",
+  "name": "bedrocss",
+  "version": "0.0.1",
+  "description": "A solid foundation of HTML styles.",
+  "main": "bedrocss.min.css",
   "scripts": {
-    "dev": "npx parcel-bundler index.html -p 8080",
-    "build": "rm -rf dist && npx parcel-bundler build"
+    "dev": "parcel index.html -p 8080",
+    "build": "rm -rf dist && parcel build src/main.css"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Stegosource/basicss.git"
+    "url": "git+https://github.com/AustinGil/bedrocss.git"
   },
-  "keywords": ["css"],
-  "author": "Austin Gil <austin@stegosource.com>",
+  "keywords": [
+    "css"
+  ],
+  "author": "Austin Gil <hey@austingil.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Stegosource/basicss/issues"
+    "url": "https://github.com/AustinGil/bedrocss/issues"
   },
-  "homepage": "https://github.com/Stegosource/basicss#readme",
+  "homepage": "https://github.com/AustinGil/bedrocss#readme",
   "devDependencies": {
     "autoprefixer": "^9.5.1",
-    "postcss": "^6.0.21",
-    "postcss-modules": "^1.1.0"
+    "parcel": "^2.0.0-beta.2",
+    "postcss": "^8.2.9"
   }
 }

@@ -1,5 +1,5 @@
-# basicss
+# BedroCSS
 
-An opinionated starting point for styling base HTML elements.
+A solid foundation of HTML styles.
 
 <!-- TODO: Add a favicon -->

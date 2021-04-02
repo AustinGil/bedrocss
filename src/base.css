@@ -1,0 +1,54 @@
+html {
+  box-sizing: border-box;
+  block-size: 100%; /* full-height content */
+  text-rendering: optimizeSpeed;
+  /* -webkit-text-size-adjust: 100%; Prevent adjustments of font size after orientation changes in iOS */
+  word-break: break-word;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+* {
+  margin: 0;
+  border-width: 2px;
+  padding: 0;
+  font-family: inherit;
+  font-weight: normal;
+  line-height: calc(8px + 2ex);
+  letter-spacing: inherit;
+  background: transparent;
+}
+body {
+  min-block-size: 100%; /* full-height content */
+  font-family: system-ui;
+}
+b, strong {
+  font-weight: bold;
+}
+ul,
+ol {
+  list-style-type: none;
+}
+table {
+  inline-size: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+pre {
+  white-space: pre-wrap;
+}
+[hidden] {
+  display: none !important;
+}
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
