@@ -14,10 +14,8 @@ html {
   margin: 0;
   border-width: 2px;
   padding: 0;
-  font-family: inherit;
   font-weight: normal;
   line-height: calc(8px + 2ex);
-  letter-spacing: inherit;
   background: transparent;
 }
 body {
@@ -31,8 +29,26 @@ ul,
 ol {
   list-style-type: none;
 }
+:where(input:not(
+  [type="checkbox"],
+  [type="radio"],
+  [type="file"],
+  [type="image"],
+  [type="color"],
+  [type="button"],
+  [type="reset"],
+  [type="submit"]
+)),
+select,
+textarea,
+meter,
+progress,
+video,
+audio,
 table {
   inline-size: 100%;
+}
+table {
   border-collapse: collapse;
   border-spacing: 0;
 }

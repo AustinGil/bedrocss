@@ -15,7 +15,3 @@ svg {
 button svg {
   pointer-events: none;
 } */
-video,
-audio {
-  inline-size: 100%;
-}
