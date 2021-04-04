@@ -11,6 +11,9 @@ svg {
   stroke: currentColor;
   stroke-width: 0;
 }
+iframe {
+  border: 0;
+}
 /* a svg,
 button svg {
   pointer-events: none;
