@@ -5,7 +5,8 @@
   "main": "bedrocss.min.css",
   "scripts": {
     "dev": "parcel index.html -p 8080",
-    "build": "rm -rf dist && parcel build src/main.css"
+    "build": "rm -rf dist && parcel build src/main.css",
+    "publish": "release-it"
   },
   "repository": {
     "type": "git",
@@ -23,6 +24,7 @@
   "devDependencies": {
     "autoprefixer": "^9.5.1",
     "parcel": "^2.0.0-beta.2",
-    "postcss": "^8.2.9"
+    "postcss": "^8.2.9",
+    "release-it": "^14.5.1"
   }
 }
