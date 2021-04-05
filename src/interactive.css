@@ -1,13 +1,14 @@
 button,
-input {
-  font-family: inherit;
+input,
+select,
+textarea {
+  font: inherit;
   letter-spacing: inherit;
-  color: inherit;
+  /* color: inherit; */
 }
 fieldset {
   border: 0;
 }
-/* :where removes specificity from :not */
 button,
 :where(input:not(
   [type="file"],
@@ -15,12 +16,13 @@ button,
 )),
 select,
 textarea {
-  border-style: solid;
+  border: 1px solid;
 }
 select {
   appearance: none;
   padding-right: 2em;
-  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="8"><path fill="black" d="M0 0 H16 L8 8 Z"/></svg>') right .6em center / .8em no-repeat;
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="8"><path fill="black" d="M0 0 H16 L8 8 Z"/></svg>') right .6em center / .8em no-repeat, #fff;
+
 }
 textarea {
   resize: vertical;
