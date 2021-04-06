@@ -20,7 +20,7 @@ html {
 }
 body {
   min-block-size: 100%; /* full-height content */
-  font-family: system-ui;
+  font-family: system-ui, sans-serif;
 }
 b, strong {
   font-weight: bold;

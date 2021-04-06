@@ -1,6 +1,5 @@
 img,
 figure,
-iframe,
 svg {
   vertical-align: middle; /* removes weird space below images */
   max-inline-size: 100%;
@@ -10,9 +9,6 @@ svg {
   fill: currentColor;
   stroke: currentColor;
   stroke-width: 0;
-}
-iframe {
-  border: 0;
 }
 /* a svg,
 button svg {
