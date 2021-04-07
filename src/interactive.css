@@ -17,14 +17,19 @@ button,
 select,
 textarea {
   border: 1px solid;
+  padding: .25rem;
+  /* min-block-size: 2em; */
 }
 select {
-  appearance: none;
-  padding-right: 2em;
-  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="8"><path fill="black" d="M0 0 H16 L8 8 Z"/></svg>') right .6em center / .8em no-repeat, #fff;
-
+  background: #fff;
 }
+/* select:not(a) {
+  appearance: none;
+  padding-right: 1em;
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="8"><path fill="black" d="M0 0 H16 L8 8 Z"/></svg>') right .3em center / .6em no-repeat, #fff;
+} */
 textarea {
+  display: block;
   resize: vertical;
 }
 :disabled {

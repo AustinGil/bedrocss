@@ -5,6 +5,9 @@ html {
   /* -webkit-text-size-adjust: 100%; Prevent adjustments of font size after orientation changes in iOS */
   word-break: break-word;
 }
+/* html:focus-within {
+  scroll-behavior: smooth;
+} */
 *,
 *::before,
 *::after {
@@ -58,6 +61,9 @@ pre {
   white-space: pre-wrap;
 }
 @media (prefers-reduced-motion: reduce) {
+  /* html:focus-within {
+   scroll-behavior: auto;
+  } */
   *,
   *::before,
   *::after {
