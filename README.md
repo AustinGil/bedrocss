@@ -1,19 +1,21 @@
 # Bedrocss
 
-Bedrocss is a foundational CSS library that's modern, lightweight, and easy to customize. It's somewhere between a reset, a normalizer, and a framework. It's purpose is to make plain HTML elements look good by default, even the ones you didn't account for.
+Bedrocss is a foundational CSS library that's modern, lightweight, and easy to customize. It's somewhere between a reset, a normalizer, and a framework.
 
 - 1.6kb (795b zipped)
 - Minimal specificity
 - Incrementally Adoptable
 - Slightly opinionated
 
-<a href="https://style-check.stegosource.com/?url=https://unpkg.com/bedrocss/bedrocss.min.css" style="border: 1px solid; border-radius: .25rem; padding: .25rem .5rem;">Demo</a>
+<a href="https://style-check.stegosource.com/?url=https://unpkg.com/bedrocss/bedrocss.min.css" style="margin-top:1rem; border: 1px solid; border-radius: .25rem; padding: .25rem .5rem;">Demo</a>
 
 ## Installation
 
 ```
 npm install bedrocss
 ```
+
+<br>
 
 ```js
 import 'bedrocss'
@@ -33,11 +35,10 @@ The library is made up of a few components (see below) that you can easily opt o
 
 Headings have a fluid font size that adjusts to screen sizes. Helper classes (`h1, h2, h3, h4, h5, h6`) let you use the right semantic tag while styling like a different heading. Every element has a more comforable `line-height`.
 
-### Slightly Opinionated
+<!-- ### Slightly Opinionated
 
 - Inputs, tables, videos, iframe and a few more default to 100% width.
-- Without the padding, list bullets dont make sense.
-- Interactive elements should look consistent.
+- Interactive elements should look consistent. -->
 
 ### Accessibility Features
 
