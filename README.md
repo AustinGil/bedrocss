@@ -25,6 +25,10 @@ import 'bedrocss'
 
 Every element will have `box-sizing: border-box;` by default, inheriting the `system-ui` font, and have no margin or padding. Images get a max width of 100%.
 
+### Easy to Customize
+
+The library is made up of a few components (see below) that you can easily opt out of. It defines CSS rules with tag and attribute selectors to maintain the lowest CSS specificity. This makes it easy be overwrite without having to write more specific rules, use `!important`, or anything complex.
+
 ### Typography
 
 Headings have a fluid font size that adjusts to screen sizes. Helper classes (`h1, h2, h3, h4, h5, h6`) let you use the right semantic tag while styling like a different heading. Every element has a more comforable `line-height`.
