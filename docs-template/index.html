@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+
+	<title>Bedrocss</title>
+	<meta name="description" content="A solid foundation of HTML styles.">
+	<meta name="author" content="Austin Gil">
+
+	<link rel="stylesheet" type="text/css" href="../bedrocss.min.css">
+</head>
+
+<body>
+	<style>
+		body {
+			max-width: 1000px;
+			margin: 0 auto;
+			padding: 2rem 1rem;
+		}
+
+		section:not(:first-of-type) {
+			margin-top: 80px;
+		}
+
+		.visually-hidden {
+			clip: rect(0 0 0 0);
+			clip-path: inset(50%);
+			height: 1px;
+			overflow: hidden;
+			position: absolute;
+			white-space: nowrap;
+			width: 1px;
+		}
+	</style>
+
+	<import src="../README.md" />
+</body>
+
+</html>

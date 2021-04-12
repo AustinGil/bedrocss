@@ -4,8 +4,9 @@
   "description": "A solid foundation of HTML styles.",
   "main": "bedrocss.min.css",
   "scripts": {
-    "dev": "parcel index.html -p 8080",
+    "dev": "parcel src/dev.html -p 8080",
     "build": "parcel build src/main.css",
+    "build-docs": "npx xm build --htmlOnly --root ./docs-template --output docs",
     "publish": "release-it"
   },
   "repository": {
