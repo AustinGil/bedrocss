@@ -28,8 +28,8 @@ body {
 b, strong {
   font-weight: bold;
 }
-ul[class],
-ol[class] {
+ul,
+ol {
   list-style-type: none;
 }
 /* :where removes specificity from :not */
