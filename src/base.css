@@ -1,3 +1,6 @@
+:root {
+  color-scheme: light;
+}
 html {
   box-sizing: border-box;
   block-size: 100%; /* full-height content */
@@ -15,11 +18,9 @@ html {
 }
 * {
   margin: 0;
-  /* border-width: 2px; */
   padding: 0;
   font-weight: normal;
   line-height: calc(8px + 2ex);
-  /* background: transparent; */
 }
 body {
   min-block-size: 100%; /* full-height content */
