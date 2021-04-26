@@ -8,9 +8,7 @@ A foundational CSS library that's modern, lightweight, and easy to live with. It
 - Slightly opinionated: For a solid foundation on which to grow your custom styles.
 
 <a href="https://style-check.stegosource.com/?url=https://unpkg.com/bedrocss/bedrocss.min.css" style="display: inline-block; margin-top:1rem; border: 1px solid; border-radius: .25rem; padding: .25rem .5rem;">Demo</a>
-
 <a href="https://github.com/austingil/bedrocss" style="display: inline-block; margin-top:1rem; border: 1px solid; border-radius: .25rem; padding: .25rem .5rem;">GitHub</a>
-
 <a href="https://www.npmjs.com/package/bedrocss" style="display: inline-block; margin-top:1rem; border: 1px solid; border-radius: .25rem; padding: .25rem .5rem;">NPM</a>
 
 ## Installation
