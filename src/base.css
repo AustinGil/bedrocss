@@ -20,18 +20,27 @@ html {
   margin: 0;
   padding: 0;
   font-weight: normal;
-  line-height: calc(8px + 2ex);
+  line-height: calc(4px + 2ex);
+}
+:focus {
+  outline: var(--outline-width, 3px) solid transparent; /* For Windows high contrast mode */
+  box-shadow: 0px 0px 0px var(--outline-width, 3px) var(--outline-color, Highlight);
 }
 body {
   min-block-size: 100%; /* full-height content */
   font-family: system-ui, sans-serif;
+}
+:where(h1, h2, h3, h4, h5, h6, p, ol, ul, dl, table, pre, hr, blockquote, details) +
+:where(h1, h2, h3, h4, h5, h6, p, ol, ul, dl, table, pre, hr, blockquote, details) {
+  margin-block-start: 1rem;
 }
 b, strong {
   font-weight: bold;
 }
 ul,
 ol {
-  list-style-type: none;
+  /* list-style-type: none; */
+  padding-inline-start: 1.5rem;
 }
 /* :where removes specificity from :not */
 :where(input:not(
