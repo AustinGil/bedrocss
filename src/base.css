@@ -40,7 +40,7 @@ b, strong {
 ul,
 ol {
   /* list-style-type: none; */
-  padding-inline-start: 1.5rem;
+  padding-inline-start: 1.1rem;
 }
 /* :where removes specificity from :not */
 :where(input:not(
