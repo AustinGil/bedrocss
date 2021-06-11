@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "parcel src/dev.html -p 8080",
     "build": "parcel build src/main.css",
-    "build-docs": "npx xm build --htmlOnly --root ./docs-template --output docs",
+    "build-docs": "xm build --htmlOnly --root ./docs-template --output docs",
     "publish": "release-it"
   },
   "repository": {
@@ -26,6 +26,7 @@
     "autoprefixer": "^9.5.1",
     "parcel": "^2.0.0-beta.2",
     "postcss": "^8.2.9",
-    "release-it": "^14.5.1"
+    "release-it": "^14.5.1",
+    "xm": "^1.0.7-test.0.0.0"
   }
 }

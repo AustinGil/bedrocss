@@ -1,6 +1,6 @@
-# Bedrocss
+# bedrocss
 
-A foundational CSS library that's modern, lightweight, and easy to live with. It's somewhere between a [reset](https://cssdeck.com/blog/what-is-a-css-reset/) and a framework because resets don't do quite enough, and frameworks do a bit too much. Bedrocss applies sane defaults to plain HTML elements, so there isn't anything to learn, and it's super easy to modify.
+A foundational CSS library that's modern, lightweight, and easy to live with. It's somewhere between a [reset](https://cssdeck.com/blog/what-is-a-css-reset/) and a framework because resets don't do quite enough, and frameworks do a bit too much. bedrocss applies sane defaults to plain HTML elements, so there isn't anything to learn, and it's super easy to modify.
 
 - 1.97kb (931b zipped): Gets you going on the right foundation without any overhead.
 - Minimal specificity: Super easy for you to customize without having to fight. 
