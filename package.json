@@ -1,6 +1,6 @@
 {
   "name": "bedrocss",
-  "version": "0.0.13",
+  "version": "0.0.14",
   "description": "A solid foundation of HTML styles.",
   "main": "bedrocss.min.css",
   "scripts": {
