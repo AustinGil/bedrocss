@@ -1,5 +1,5 @@
 :root {
-  color-scheme: light;
+  color-scheme: light dark;
 }
 html {
   box-sizing: border-box;
@@ -68,6 +68,9 @@ table {
   border-spacing: 0;
 }
 pre {
+  /* padding: .25rem;
+  color: Canvas;
+  background: CanvasText; */
   white-space: pre-wrap;
 }
 @media (prefers-reduced-motion: reduce) {

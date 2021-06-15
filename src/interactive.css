@@ -19,9 +19,7 @@ textarea {
   border: 1px solid;
   padding: .25rem;
   /* min-block-size: 2em; */
-}
-select {
-  background: #fff;
+  background: Field;
 }
 /* select:not(a) {
   appearance: none;
