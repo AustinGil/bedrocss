@@ -6,7 +6,7 @@ html {
   block-size: 100%; /* full-height content */
   text-rendering: optimizeSpeed;
   /* -webkit-text-size-adjust: 100%; Prevent adjustments of font size after orientation changes in iOS */
-  word-break: break-word;
+  /* word-break: break-word; Cool, but it breaks tables :/ */
 }
 /* html:focus-within {
   scroll-behavior: smooth;
