@@ -1,7 +1,7 @@
 {
   "name": "bedrocss",
   "version": "0.0.15",
-  "description": "A foundational, classless CSS library that's modern, lightweight, works out of the box, and is easy to overwrite.",
+  "description": "A classless CSS library that's modern, lightweight, and easy to modify so you can start your projects on a solid foundation.",
   "main": "bedrocss.min.css",
   "scripts": {
     "dev": "parcel src/dev.html -p 8080",
