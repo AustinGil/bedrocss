@@ -51,7 +51,7 @@ Most inputs are set to take up the full width of their container. They also are 
 
 ### Easy to Customize
 
-The library is made up of a few parts (see below) that you can easily opt out of. It defines CSS rules with tag and attribute selectors to maintain the lowest CSS specificity. This makes it easy be overwrite without having to write more specific rules, use `!important`, or anything complex.
+Every CSS rule applies the lowest possible CSS specificity. This makes it easy be overwrite without having to write more specific rules, use `!important`, or anything complex. It's also is made up of a few parts (see below) that you can easily opt out of. 
 
 ## Opting out of features
 
