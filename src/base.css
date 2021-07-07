@@ -29,6 +29,7 @@ html {
 body {
   min-block-size: 100%; /* full-height content */
   font-family: system-ui, sans-serif;
+  /* hyphens: auto; */
 }
 :where(h1, h2, h3, h4, h5, h6, p, ol, ul, dl, table, pre, hr, blockquote, details) +
 :where(h1, h2, h3, h4, h5, h6, p, ol, ul, dl, table, pre, hr, blockquote, details) {
@@ -67,12 +68,28 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+th,
+td {
+  border: 1px solid;
+}
 pre {
   /* padding: .25rem;
   color: Canvas;
   background: CanvasText; */
   white-space: pre-wrap;
 }
+/* sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sup {
+  top: -0.5em; }
+
+sub {
+  bottom: -0.25em; } */
 @media (prefers-reduced-motion: reduce) {
   /* html:focus-within {
    scroll-behavior: auto;

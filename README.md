@@ -1,8 +1,8 @@
 # bedrocss
 
-A foundational CSS library that's modern, lightweight, and easy to live with. It's somewhere between a [reset](https://cssdeck.com/blog/what-is-a-css-reset/) and a framework because resets don't do quite enough, and frameworks do a bit too much. bedrocss applies sane defaults to plain HTML elements, so there isn't anything to learn, and it's super easy to modify.
+A foundational, classless CSS library that's modern, lightweight, works out of the box, and is easy to overwrite. It does a bit more than a [reset](https://cssdeck.com/blog/what-is-a-css-reset/), but not so much as a framework. bedrocss applies sane defaults to plain HTML elements, so there isn't anything to learn, and it's super easy to modify.
 
-- 1.97kb (931b zipped): Gets you going on the right foundation without any overhead.
+- 947 bytes zipped (2.02kb unzipped): Gets you going on the right foundation without any overhead.
 - Minimal specificity: Super easy for you to customize without having to fight. 
 - Incrementally Adoptable: If you don't like certain parts, you can leave them out.
 - Slightly opinionated: For a solid foundation on which to grow your custom styles.
@@ -27,19 +27,31 @@ import 'bedrocss'
 
 ### Common Defaults
 
-Every element will have `box-sizing: border-box;` by default, inherit the `system-ui` font, and have no margin or padding. Some tags (input, video, progres, and more) stretch the full width of their parents, and images are kept withing their parent elements.
+Every project I've ever worked on sets `box-sizing: border-box;` on every element and the height of the app to match the screen height. Most others remove margin and padding on everything so there is a predictable starting point. Images have a max width of 100% so they don't break out of parent containers.
+
+### User Focus
+
+We style based on user preferences this by setting text to the  `system-ui` font, support light and dark mode with `color-scheme`, and if enabled, use the `prefers-reduces-motion` media query to disable animations and transitions. This is especially relevant for users with vestibular disorders.
+
+### Accessibility
+
+In addition to the reduced motion support above, this library has other accessibility features. It uses rem units for any sizing to respect user's font-size preferences. Better focus styles that handle border radius, use the user agent color, and still work in high-contrast mode.
+
+### Slightly Opinionated
+
+This library implements the most common practices as well as some opinions to make things easier. For example, many tags (input, video, progres, and more) stretch the full width of their parents. Although the margins are removed by default, we add some back for content flow so, for example, two paragraphs get some space between.
+
+### Typography
+
+Headings have a fluid font size that adjusts to screen sizes. Here are the only helper classes (`.h1, .h2, .h3, .h4, .h5, .h6`) so you can use the correct semantic HTML tag but style it like a different heading. Every element also has a `line-height` that's optimized for readability.
+
+### Forms
+
+Most inputs are set to take up the full width of their container. They also are set to inherit font styles rather than the default behavior of ignoring the body styles. Spacing, border, and colors are set to match as opposed to the default browser behavior with slightly different sizes. Visual feedback is provided for `disabled` and `readonly` inputs.
 
 ### Easy to Customize
 
 The library is made up of a few parts (see below) that you can easily opt out of. It defines CSS rules with tag and attribute selectors to maintain the lowest CSS specificity. This makes it easy be overwrite without having to write more specific rules, use `!important`, or anything complex.
-
-### Typography
-
-Headings have a fluid font size that adjusts to screen sizes. Helper classes (`.h1, .h2, .h3, .h4, .h5, .h6`) let you use the right semantic tag while styling like a different heading. Every element has a more comforable `line-height`.
-
-### Accessibility Features
-
-Uses rem units for any sizing to respect user's font-size preferences. Targets `prefers-reduces-motion` media query to disable animations, transitions, and animated scrolling for users that have declared they do not want it. This is especially relevant for users with vestibular disorders. Supports a basic dark mode out of the box based on user's system settings.
 
 ## Opting out of features
 

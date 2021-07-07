@@ -1,9 +1,20 @@
+/* a,
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  cursor: pointer;
+} */
+/* button[disabled],
+html input[disabled] {
+  cursor: default; } */
 button,
 input,
 select,
 textarea {
   font: inherit;
   letter-spacing: inherit;
+  word-spacing: inherit;
   /* color: inherit; */
 }
 fieldset {
@@ -19,6 +30,8 @@ textarea {
   border: 1px solid;
   padding: .25rem;
   /* min-block-size: 2em; */
+}
+select {
   background: Field;
 }
 /* select:not(a) {
@@ -30,6 +43,8 @@ textarea {
   display: block;
   resize: vertical;
 }
+/* optgroup {
+  font-weight: bold; } */
 :disabled {
   border-style: dotted;
   cursor: not-allowed;
