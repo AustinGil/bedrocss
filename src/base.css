@@ -1,7 +1,5 @@
-:root {
-  color-scheme: light dark;
-}
 html {
+  color-scheme: light dark;
   box-sizing: border-box;
   block-size: 100%; /* full-height content */
   text-rendering: optimizeSpeed;
