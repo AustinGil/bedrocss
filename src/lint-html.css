@@ -3,7 +3,7 @@
 /* Debug inputs and lebels without id or for attribute */
 /* Are you sure your code is ok? Explicit relation between an input and its label is always better. Use id and for attributes to do so. */
 /* By Geoffrey Crofte */
-input:not([id], label:not([for])),
+input:not([id]), label:not([for]),
 
 
 /* Links go nowhere? */
@@ -34,7 +34,7 @@ img:not([alt]),
 /* Only <li>'s allowed here! */
 /* This selector hunts for lists that have something other than an <li> inside */
 /* By Adam Argyle */
-:is(ul, ol) > :not(li),
+:is(ul, ol) *:not(li),
 
 /* Prevent page load jank and CLS by finding <img>'s missing height and width attributes */
 /* By Adam Argyle */
