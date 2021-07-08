@@ -2,7 +2,7 @@
 
 A classless CSS library that's modern, lightweight, and easy to modify so you can start your projects on a solid foundation. It does a bit more than a [reset](https://cssdeck.com/blog/what-is-a-css-reset/), but not so much as a framework. bedrocss applies sane defaults to plain HTML elements, so there isn't anything to learn, and it's super easy to modify.
 
-- 947 bytes zipped (2.02kb unzipped): Gets you going on the right foundation without any overhead.
+- 933 bytes zipped (1.99kb unzipped): Gets you going on the right foundation without any overhead.
 - Minimal specificity: Super easy for you to customize without having to fight. 
 - Incrementally Adoptable: If you don't like certain parts, you can leave them out.
 - Slightly opinionated: For a solid foundation on which to grow your custom styles.
