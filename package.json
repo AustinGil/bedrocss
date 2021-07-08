@@ -1,6 +1,6 @@
 {
   "name": "bedrocss",
-  "version": "0.0.17",
+  "version": "0.0.18",
   "description": "A classless CSS library that's modern, lightweight, and easy to modify so you can start your projects on a solid foundation.",
   "main": "bedrocss.min.css",
   "scripts": {
