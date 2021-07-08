@@ -23,7 +23,8 @@ fieldset {
 button,
 :where(input:not(
   [type="file"],
-  [type="image"]
+  [type="image"],
+  [type="range"]
 )),
 select,
 textarea {
