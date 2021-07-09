@@ -13,16 +13,24 @@ A classless CSS library that's modern, lightweight, and easy to modify so you ca
 
 ## Installation
 
+The recommended approach is to include `bedrocss` as an NPM dependency.
 ```
 npm install bedrocss
 ```
 
-<br>
+Then to include it in your application before any other CSS. 
 
 ```js
 import 'bedrocss'
+// other styles after
 ```
 
+Alternatively, you can link to the unpkg CDN version from your HTML `<head>`. 
+
+```html
+<link rel="stylesheet" type="text/css" href="https://unpkg.com/bedrocss">
+<!-- other styles after -->
+```
 ## Features
 
 ### Common Defaults
