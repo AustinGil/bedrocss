@@ -7,7 +7,7 @@ A classless CSS library that's modern, lightweight, and easy to modify so you ca
 - Incrementally Adoptable: If you don't like certain parts, you can leave them out.
 - Slightly opinionated: For a solid foundation on which to grow your custom styles.
 
-<a href="https://style-check.stegosource.com/?url=https://unpkg.com/bedrocss/bedrocss.min.css" style="display: inline-block; border: 1px solid; border-radius: .25rem; padding: .25rem .5rem;">Demo</a>
+<a href="https://style-check.austingil.com/?url=https://unpkg.com/bedrocss/bedrocss.min.css" style="display: inline-block; border: 1px solid; border-radius: .25rem; padding: .25rem .5rem;">Demo</a>
 <a href="https://github.com/austingil/bedrocss" style="display: inline-block; border: 1px solid; border-radius: .25rem; padding: .25rem .5rem;">GitHub</a>
 <a href="https://www.npmjs.com/package/bedrocss" style="display: inline-block; border: 1px solid; border-radius: .25rem; padding: .25rem .5rem;">NPM</a>
 
