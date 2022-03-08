@@ -32,9 +32,6 @@ textarea {
   padding: .25rem;
   /* min-block-size: 2em; */
 }
-select {
-  background: Field;
-}
 /* select:not(a) {
   appearance: none;
   padding-right: 1em;
