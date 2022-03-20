@@ -1,8 +1,9 @@
 html {
   color-scheme: light dark;
   box-sizing: border-box;
-  block-size: 100%; /* full-height content */
+  height: 100%; /* full-height content */
   text-rendering: optimizeSpeed;
+  accent-color: var(--accent-color, auto);
   /* -webkit-text-size-adjust: 100%; Prevent adjustments of font size after orientation changes in iOS */
   /* word-break: break-word; Cool, but it breaks tables :/ */
 }
@@ -22,10 +23,10 @@ html {
 }
 :focus {
   outline: var(--outline-width, 3px) solid transparent; /* For Windows high contrast mode */
-  box-shadow: 0px 0px 0px var(--outline-width, 3px) var(--outline-color, Highlight);
+  box-shadow: 0px 0px 0px var(--outline-width, 3px) var(--accent-color, Highlight);
 }
 body {
-  min-block-size: 100%; /* full-height content */
+  min-height: 100%; /* full-height content */
   font-family: system-ui, sans-serif;
   /* hyphens: auto; */
 }
