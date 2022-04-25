@@ -7,7 +7,13 @@
     "dev": "parcel src/dev.html -p 8080",
     "build": "parcel build src/main.css",
     "build-docs": "npx xm build --htmlOnly --root ./docs-template --output docs",
-    "publish": "release-it"
+    "publish": "semantic-release"
+  },
+  "release": {
+    "branches": [
+      "master",
+      "next"
+    ]
   },
   "repository": {
     "type": "git",
@@ -26,6 +32,7 @@
     "autoprefixer": "^10.2.6",
     "parcel": "^2.0.0-beta.2",
     "postcss": "^8.3.5",
-    "release-it": "^14.10.0"
+    "release-it": "^14.10.0",
+    "semantic-release": "^19.0.2"
   }
 }
