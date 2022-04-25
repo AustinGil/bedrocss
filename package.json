@@ -11,8 +11,7 @@
   },
   "release": {
     "branches": [
-      "master",
-      "next"
+      "production"
     ]
   },
   "repository": {
