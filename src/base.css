@@ -22,8 +22,10 @@ html {
   line-height: calc(4px + 2ex);
 }
 :focus {
-  outline: var(--outline-width, 3px) solid transparent; /* For Windows high contrast mode */
-  box-shadow: 0px 0px 0px var(--outline-width, 3px) var(--accent-color, Highlight);
+/*   outline: var(--outline-width, 3px) solid transparent; /* For Windows high contrast mode */
+/*  box-shadow: 0px 0px 0px var(--outline-width, 3px) var(--accent-color, Highlight); */
+  outline: .125rem solid var(--accent-color, Highlight);
+  outline-offset: 0.15em;
 }
 body {
   min-height: 100%; /* full-height content */
