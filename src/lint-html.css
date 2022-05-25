@@ -157,6 +157,10 @@ a h4,
 a h5,
 a h6,
 
+/* No headings inside label. See: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/label#headings */
+/* By Tobias Buschor */
+label :is(h1,h2,h3,h4,h5,h6),
+
 /* <img> without height and width that will cause cumulative layout shift. See: https://web.dev/optimize-cls/#images-without-dimensions */
 /* By Jay Holtslander */
 img:not([width]),
