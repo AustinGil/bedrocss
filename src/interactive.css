@@ -8,10 +8,12 @@ input[type="submit"] {
 /* button[disabled],
 html input[disabled] {
   cursor: default; } */
-button,
-input,
-select,
-textarea {
+:where(
+  button,
+  input,
+  select,
+  textarea
+) {
   font: inherit;
   letter-spacing: inherit;
   word-spacing: inherit;
@@ -20,15 +22,18 @@ textarea {
 fieldset {
   border: 0;
 }
-button,
-:where(input:not(
-  [type="file"],
-  [type="image"],
-  [type="range"]
-)),
-select,
-textarea {
-  border: 1px solid;
+
+:where(
+  input:not(
+    [type="file"],
+    [type="image"],
+    [type="range"]
+  )
+  button,
+  select,
+  textarea
+) {
+  border: 2px solid;
   padding: .25rem;
   /* min-block-size: 2em; */
 }
@@ -44,9 +49,9 @@ textarea {
 /* optgroup {
   font-weight: bold; } */
 :disabled {
-  border-style: dotted;
+/*   border-style: dotted; */
   cursor: not-allowed;
 }
-[readonly] {
+/* [readonly] {
   border-style: dashed;
-}
+} */
